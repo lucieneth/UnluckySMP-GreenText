@@ -27,6 +27,6 @@ public class UnluckyGreenText implements ModInitializer {
 		ServerMessageDecoratorEvent.EVENT.register(ServerMessageDecoratorEvent.STYLING_PHASE, DECORATOR);
 		CommandRegistrationCallback.EVENT.register((dispatcher, buildContext, selection) -> GreenTextCommand.register(dispatcher));
 
-		LOGGER.info("Unlucky GreenText ready — prefix \"{}\"", CONFIG.greentext_prefix);
+		LOGGER.info("Unlucky GreenText loaded.");
 	}
 }
